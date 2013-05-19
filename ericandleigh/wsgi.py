@@ -1,4 +1,5 @@
 import os
+import sys
 sys.path.append('/var/django/ericandleigh.com')
 sys.path.append('/var/django')
 
