@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 	concat: {
 		dist: {
 			src: [ "media/css/reset.css", "media/css/layout.css", "media/css/style.css" ],
-			dest: "/media/min.css"
+			dest: "media/min.css"
 		}
 	}
 
