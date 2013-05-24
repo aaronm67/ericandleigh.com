@@ -6,33 +6,17 @@
             Eric and Leigh
         {% endblock %}
     </title>
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-<script type="text/javascript" src="js/jquery-1.6.js" ></script>
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/cufon-replace.js"></script>  
-<script type="text/javascript" src="js/Josefin_Sans_400.font.js"></script>
-<script type="text/javascript" src="js/Tangerine_700.font.js"></script>
-<script type="text/javascript" src="js/atooltip.jquery.js"></script> 
-<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+		<link rel="stylesheet" href="/media/min.css" type="text/css">
+		<script type="text/javascript" src="/media/min.js"></script>
 </head>
-<body>
-    <div id="wrapper">
-        {% include "partial/header.html" %}
-        {% include "partial/menu.html" %}
-        <div id="page" class="clearfix">
-            <div id="page-bgtop">
-                <div id="content">
-                    {% block content %}
-                    {% endblock %}
-                </div>
-            </div>
-        </div>
-
-        {% include "partial/footer.html" %}
-    </div>
+<body id="page1">
+    {% include "partial/header.html" %}
+	<div class="body3">
+		<div class="main">
+    	    {% block content %}
+        	{% endblock %}
+		</div>
+	</div>
+    {% include "partial/footer.html" %}
 </body>
 </html>
-
