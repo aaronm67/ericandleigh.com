@@ -18,13 +18,40 @@
 			</div>
 			<div class="slider_box">
 				<div class="slider">
-					<img src="images/img1.jpg" alt="" title="">
-					<img src="images/img2.jpg" alt="" title="">
-					<img src="images/img3.jpg" alt="" title="">
-					<img src="images/img4.jpg" alt="" title="">
-					<img src="images/img5.jpg" alt="" title="">
+					<img src="media/img/img1.jpg" alt="" title="">
+					<img src="media/img/img2.jpg" alt="" title="">
+					<img src="media/img/img3.jpg" alt="" title="">
+					<img src="media/img/img4.jpg" alt="" title="">
+					<img src="media/img/img5.jpg" alt="" title="">
 				</div>
 			</div>
 		</header>
 	</div>
 </div>
+
+<script type="text/javascript">
+	Cufon.now();
+	$(function() {
+		$('.slider').nivoSlider({
+			effect:'fold',
+			slices:17,
+			animSpeed:500,
+			pauseTime:8000,
+			startSlide:0,
+			directionNav:true,
+			directionNavHide:false,
+			controlNav:true, 
+			controlNavThumbs:false, 
+			controlNavThumbsFromRel:false, 
+			controlNavThumbsSearch: '.jpg',
+			controlNavThumbsReplace: '_thumb.jpg', 
+			keyboardNav:true, 
+			pauseOnHover:true,
+			manualAdvance:false,
+			captionOpacity:1,
+			beforeChange: function(){},
+			afterChange: function(){Cufon.refresh();},
+			slideshowEnd: function(){}
+		});
+	});
+</script>
